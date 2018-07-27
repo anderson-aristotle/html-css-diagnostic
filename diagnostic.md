@@ -39,10 +39,10 @@ and an unordered list (with three items) inside the body.
 
 How would we reference each of the following categories of elements?
 
--   All elements that belong to the _class_ `big`
--   The element matching _ID_ `contentPane`
--   Only those elements belonging to both the `important` and `red` _classes_
--   All `p` elements whose parent elements are `div`s
+- All elements that belong to the _class_ `big`
+- The element matching _ID_ `contentPane`
+- Only those elements belonging to both the `important` and `red` _classes_
+- All `p` elements whose parent elements are `div`s
 
 <!-- your answer starts here -->
 
@@ -53,7 +53,7 @@ How would we reference each of the following categories of elements?
 Consider the following HTML and CSS code. What text color and font-family values
 will the div labeled 'specialDiv' have?
 
-**index.html**
+### index.html
 
 ```HTML
 <!DOCTYPE html>
@@ -71,7 +71,7 @@ will the div labeled 'specialDiv' have?
 </html>
 ```
 
-**main.css**
+### main.css
 
 ```CSS
 * {
@@ -112,7 +112,7 @@ Consider the following HTML and CSS. Assuming that the window is much larger
 than the dimensions of any of the `div`s given below, how will each `div` be
 arranged on the page?
 
-**index.html**
+### index.html
 
 ```HTML
 <!DOCTYPE html>
@@ -130,7 +130,7 @@ arranged on the page?
 </html>
 ```
 
-**style.css**
+### style.css
 
 ```CSS
 div {
