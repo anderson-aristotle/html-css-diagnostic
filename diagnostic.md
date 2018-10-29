@@ -42,7 +42,7 @@ How would we reference each of the following categories of elements?
 - All elements that belong to the _class_ `big`
 - The element matching _ID_ `contentPane`
 - Only those elements belonging to both the `important` and `red` _classes_
-- All `p` elements whose parent elements are `div`s
+- All `p` elements whose direct parent elements are `divs`
 
 <!-- your answer starts here -->
 
