@@ -112,14 +112,6 @@ Consider the following HTML and CSS. Assuming that the window is much larger
 than the dimensions of any of the `div`s given below, how will each `div` be
 arranged on the page?
 
-Example:
-```
-divOne divTwo
-divThree
-divFour
-                         divFive
-```
-
 ### index.html
 
 ```html
