@@ -8,7 +8,7 @@ code. Please do so using the following Markdown formatting.
 
 ## For HTML
 
-    ```HTML
+    ```html
     <html>
     ...
     </html>
@@ -16,7 +16,7 @@ code. Please do so using the following Markdown formatting.
 
 ## For CSS
 
-    ```CSS
+    ```css
     ul {
       ...
     }
@@ -42,7 +42,7 @@ How would we reference each of the following categories of elements?
 - All elements that belong to the _class_ `big`
 - The element matching _ID_ `contentPane`
 - Only those elements belonging to both the `important` and `red` _classes_
-- All `p` elements whose parent elements are `div`s
+- All `p` elements whose direct parent elements are `divs`
 
 <!-- your answer starts here -->
 
@@ -55,7 +55,7 @@ will the div labeled 'specialDiv' have?
 
 ### index.html
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -73,7 +73,7 @@ will the div labeled 'specialDiv' have?
 
 ### main.css
 
-```CSS
+```css
 * {
   color: black;
 }
@@ -114,38 +114,41 @@ arranged on the page?
 
 ### index.html
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
-    <div class="divOne"></div>
-    <div class="divTwo"></div>
-    <div class="divThree"></div>
-    <div class="divFour"></div>
-    <div class="divFive"></div>
+    <div class="parentDiv">
+      <div class="divOne">divOne</div>
+      <div class="divTwo">divTwo</div>
+      <div class="divThree">divThree</div>
+      <div class="divFour">divFour</div>
+      <div class="divFive">divFive</div>
+    </div>
   </body>
 </html>
 ```
 
 ### style.css
 
-```CSS
+```css
 div {
   /* ... */
   /* Some other specifications, e.g. dimensions. */
   /* ... */
-  float: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .divOne {
-  float: right;
+  align-self: flex-end;
 }
 
 .divFour {
-  clear: left;
+  order: 1;
 }
 ```
 
@@ -158,7 +161,7 @@ div {
 Consider the following media queries. How wide, in `px`, would an element
 with the class `.stretch` be at a _screen width_ of 550px?
 
-```CSS
+```css
 .stretch {
   width: 100px;
 }
