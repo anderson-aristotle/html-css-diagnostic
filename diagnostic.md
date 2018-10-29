@@ -112,6 +112,14 @@ Consider the following HTML and CSS. Assuming that the window is much larger
 than the dimensions of any of the `div`s given below, how will each `div` be
 arranged on the page?
 
+Example:
+```
+divOne divTwo
+divThree
+divFour
+                         divFive
+```
+
 ### index.html
 
 ```HTML
@@ -121,11 +129,13 @@ arranged on the page?
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
-    <div class="divOne"></div>
-    <div class="divTwo"></div>
-    <div class="divThree"></div>
-    <div class="divFour"></div>
-    <div class="divFive"></div>
+    <div class="parentDiv">
+      <div class="divOne">divOne</div>
+      <div class="divTwo">divTwo</div>
+      <div class="divThree">divThree</div>
+      <div class="divFour">divFour</div>
+      <div class="divFive">divFive</div>
+    </div>
   </body>
 </html>
 ```
@@ -137,15 +147,16 @@ div {
   /* ... */
   /* Some other specifications, e.g. dimensions. */
   /* ... */
-  float: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .divOne {
-  float: right;
+  align-self: flex-end;
 }
 
 .divFour {
-  clear: left;
+  order: 1;
 }
 ```
 
