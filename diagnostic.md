@@ -8,7 +8,7 @@ code. Please do so using the following Markdown formatting.
 
 ## For HTML
 
-    ```HTML
+    ```html
     <html>
     ...
     </html>
@@ -16,7 +16,7 @@ code. Please do so using the following Markdown formatting.
 
 ## For CSS
 
-    ```CSS
+    ```css
     ul {
       ...
     }
@@ -55,7 +55,7 @@ will the div labeled 'specialDiv' have?
 
 ### index.html
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -73,7 +73,7 @@ will the div labeled 'specialDiv' have?
 
 ### main.css
 
-```CSS
+```css
 * {
   color: black;
 }
@@ -122,7 +122,7 @@ divFour
 
 ### index.html
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -142,7 +142,7 @@ divFour
 
 ### style.css
 
-```CSS
+```css
 div {
   /* ... */
   /* Some other specifications, e.g. dimensions. */
@@ -169,7 +169,7 @@ div {
 Consider the following media queries. How wide, in `px`, would an element
 with the class `.stretch` be at a _screen width_ of 550px?
 
-```CSS
+```css
 .stretch {
   width: 100px;
 }
